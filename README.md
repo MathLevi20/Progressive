@@ -4,7 +4,7 @@ Esta é uma versão muito simplificada do Trello (Ultilizando a Metodologia Kanb
 
 ## Live demo
 
-Para uma demonstração ao vivo do projeto, dê uma olhada em https://progressive-2d975.web.app/boards
+Para uma demonstração ao vivo do projeto, dê uma olhada em https://progressive-2d975.web.app/Welcome
 
 ### Setup
 
