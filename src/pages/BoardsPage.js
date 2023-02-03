@@ -86,9 +86,10 @@ export const BoardsPage = withAuthorization((authUser) => !!authUser)(() => {
                                     starBoard(board?.key, !board.starred)
                                 }
                                 handleDataChange={() =>
-                                    handleDataChange(board.key)
+                                    handleDataChange(board?.key)
                                 }
                                 starred={board.starred}
+                                handleBoardClick1={() => { setModalVisible2(true); setkey(board.key); }}
 
                             />
 

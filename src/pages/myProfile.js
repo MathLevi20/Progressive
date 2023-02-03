@@ -43,7 +43,7 @@ export const myProfile = withAuthorization((authUser) => !!authUser)(() => {
     }
 
     const teste1 = getUser()
-
+    console.log(teste1)
     return (
         <div className={`pt-16 py-4 px-3  border-8 border-transparent`}>
             <div className="flex mb-3 items-center text-xl">
@@ -52,7 +52,8 @@ export const myProfile = withAuthorization((authUser) => !!authUser)(() => {
             <div className='flex justify-center items-center m-15'>
                 <div className='bg-indigo-600 content-center m-auto p-5 rounded-lg px-10 shadow-lg shadow-indigo-500/40'>
                     <div className='flex justify-center items-center'>
-                        <img className='w-10/12 rounded-full' src={teste1.photoURL} alt='imagem-user'></img>
+                        {console.log(teste1)}
+                        <img className='w-10/12 rounded-3xl p-4 border-8 border-black' src={teste1.photoURL === null ? "https://img.icons8.com/ios/50/null/gender-neutral-user--v1.png" : teste1.photoURL } alt='imagem-user'></img>
                     </div>
                     <div className='flex justify-center items-center text-white text-2xl'>
                         {teste1.displayName}

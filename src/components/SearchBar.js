@@ -61,7 +61,7 @@ export function Search(props) {
     };
 
     return (
-        <div className='searchbar py-2 border-b-2  border-transparent mx-10 sm:mx-30   md:mx-40  lg:px-44 '>
+        <div className='searchbar pb-4 border-b-2  border-transparent mx-10 sm:mx-30   md:mx-40  lg:px-44 '>
             <form className={`flex items-center `} onSubmit={(event) => handleCreateBoard(event)}>
                 <Input
                     type='search'

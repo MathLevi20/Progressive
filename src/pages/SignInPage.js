@@ -9,13 +9,14 @@ import { authService } from '../application/services';
 import { ROUTES } from '../application/constants';
 
 const SignInForm = () => {
+
+
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState(null);
     const [loading, setLoading] = useState(false);
     const [, dispatch] = useStateValue();
     const history = useHistory();
-
     const signInWithGoogle = async (event) => {
         event.preventDefault();
         try {
@@ -37,6 +38,9 @@ const SignInForm = () => {
         try {
             setLoading(true);
             await authService.signInWithEmailAndPassword(email, password);
+            history.push('/boards')
+
+
         } catch (error) {
             setError(error.message);
             setLoading(false);

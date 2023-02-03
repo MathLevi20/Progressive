@@ -25,7 +25,7 @@ export const Content = withAuthentication(() => (
 
             <div className="h-full">
                 <Switch>
-                    <Redirect exact from="/" to="/boards" />
+                    <Redirect exact from="/" to="/Welcome" />
                     <Route exact path={ROUTES.SIGN_UP} component={SignUpPage} />
                     <Route exact path={ROUTES.SIGN_IN} component={SignInPage} />
                     <Route exact path={ROUTES.BOARDS} component={BoardsPage} />

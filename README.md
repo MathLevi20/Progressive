@@ -1,10 +1,10 @@
 # Progressive Software
 
-Esta é uma versão muito simplificada do Trello (Ultilizando a Metodologia Kanban) usando React,Tailwind e Firebase
+This is a very simplified version of Trello using React and Firebase.
 
 ## Live demo
 
-Para uma demonstração ao vivo do projeto, dê uma olhada em https://progressive-2d975.web.app/Welcome
+For a live demo of the project have a look at https://progressive-2d975.web.app/boards
 
 ### Setup
 
